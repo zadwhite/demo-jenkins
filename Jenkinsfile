@@ -10,6 +10,7 @@ pipeline {
 
     stage('Test') {
       agent {
+        label "jenkins-worker"
         docker {
           image 'node:20-alpine'
         }
